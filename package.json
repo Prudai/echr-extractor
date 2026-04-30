@@ -1,0 +1,80 @@
+{
+  "name": "@prudai/echr-extractor",
+  "version": "0.1.0",
+  "description": "TypeScript library for extracting case law metadata, full text, citation networks, and structured segments from the European Court of Human Rights HUDOC database.",
+  "keywords": [
+    "echr",
+    "hudoc",
+    "european-court-of-human-rights",
+    "case-law",
+    "legal-nlp",
+    "extractor",
+    "scraper",
+    "human-rights",
+    "legal-tech"
+  ],
+  "homepage": "https://github.com/prudai/echr-extractor#readme",
+  "bugs": {
+    "url": "https://github.com/prudai/echr-extractor/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prudai/echr-extractor.git"
+  },
+  "license": "Apache-2.0",
+  "author": "PrudAI <hello@prudai.com>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "echr-extractor": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test",
+    "example:basic": "tsx examples/basic.ts",
+    "example:full-text": "tsx examples/full-text.ts",
+    "example:segments": "tsx examples/segments.ts",
+    "example:network": "tsx examples/network.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.11.6",
+    "@types/node": "^20.14.0",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

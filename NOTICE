@@ -1,0 +1,15 @@
+@prudai/echr-extractor
+Copyright 2026 PrudAI
+
+This product is a TypeScript port of `echr-extractor` (Python),
+originally developed by the Maastricht Law & Tech Lab.
+
+Original work:
+  echr-extractor (Python)
+  Copyright Maastricht Law & Tech Lab and contributors
+  Licensed under the Apache License, Version 2.0
+  https://github.com/maastrichtlawtech/echr-extractor
+
+This product includes software developed by the Maastricht Law & Tech Lab.
+The Apache 2.0 license under which the original work is distributed is
+preserved in this derivative work; see LICENSE for full terms.

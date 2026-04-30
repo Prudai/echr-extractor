@@ -1,0 +1,13 @@
+src/
+tests/
+examples/
+.github/
+data/
+coverage/
+.editorconfig
+.gitignore
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+*.tsbuildinfo
+.claude
