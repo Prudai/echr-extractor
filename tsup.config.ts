@@ -11,7 +11,7 @@ export default defineConfig({
   clean: true,
   splitting: false,
   treeshake: true,
-  target: "node18",
+  target: "node20",
   platform: "node",
   banner: ({ format }) =>
     format === "esm" ? { js: "#!/usr/bin/env node" } : {},

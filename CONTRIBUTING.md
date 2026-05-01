@@ -12,11 +12,11 @@ npm test
 npm run build
 ```
 
-Requires Node.js 18 or newer.
+Requires Node.js 20 or newer.
 
 ## Project layout
 
-```
+```text
 src/
   echr.ts           High-level public functions (getEchr, getEchrExtra, ...)
   hudoc/            HUDOC HTTP client, query/URL builder, default field list
@@ -32,7 +32,7 @@ examples/           Runnable usage examples (tsx)
 
 ## Conventions
 
-- **No external runtime deps** beyond `cheerio`, `commander`, and `cli-progress`. We use native `fetch` (Node 18+).
+- **No external runtime deps** beyond `cheerio`, `commander`, and `cli-progress`. We use native `fetch` (Node 20+).
 - **TypeScript strict mode** is on. Add types — never `any` without justification.
 - **Tests for parsing/query logic** are required. Network calls are mocked via `vi.fn()` over `fetch`.
 - **Backward compatibility:** `0.x` may break between minor versions; `1.0.0+` follows semver.

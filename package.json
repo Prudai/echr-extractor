@@ -1,6 +1,6 @@
 {
   "name": "@prudai/echr-extractor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "TypeScript library for extracting case law metadata, full text, citation networks, and structured segments from the European Court of Human Rights HUDOC database.",
   "keywords": [
     "echr",
@@ -46,7 +46,7 @@
     "CHANGELOG.md"
   ],
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "scripts": {
     "build": "tsup",

@@ -12,7 +12,7 @@ TypeScript library and CLI for extracting case-law data from the **European Cour
 - **Full-text download** with concurrent workers and HTML-to-plain-text extraction.
 - **Citation network** — nodes and edges from `appno`/`scl` references, with a missing-references report.
 - **Section segmentation** — splits judgments into procedure / facts / complaints / law / operative / separate opinion / appendix (EN + FR).
-- **Native fetch** (Node 18+). No Python, no `pandas`, no heavyweight HTTP clients.
+- **Native fetch** (Node 20+). No Python, no `pandas`, no heavyweight HTTP clients.
 - **TypeScript-first** with full type definitions, ESM and CJS builds.
 - **CLI** that mirrors the upstream tool: `echr-extractor extract | extract-full | network | segment`.
 
@@ -22,7 +22,7 @@ TypeScript library and CLI for extracting case-law data from the **European Cour
 npm install @prudai/echr-extractor
 ```
 
-Requires **Node.js 18 or newer**.
+Requires **Node.js 20 or newer**.
 
 ## Quick start
 
@@ -136,7 +136,7 @@ import {
 
 When `saveFile` is true the package writes files matching the upstream Python conventions, so output is interchangeable:
 
-```
+```text
 data/
   echr_metadata_<idRange>_<dateRange>.csv
   echr_full_text_<idRange>_<dateRange>.json
